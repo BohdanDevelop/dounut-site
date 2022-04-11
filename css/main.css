@@ -47,7 +47,7 @@ body {
     background-image: url("../images/pc/party.png"), url("../images/pc/wheat.png"), url("../images/background-down.svg");
     background-size: 300px 544px, 207px 182px, contain;
     background-repeat: no-repeat;
-    background-position: right 130px bottom 175px, right bottom, 0px 1690px;
+    background-position: right 314px bottom 48px, right bottom, 0px 1690px;
   }
 }
 
