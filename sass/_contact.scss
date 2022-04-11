@@ -1,0 +1,125 @@
+.contact {
+  padding-bottom: 30px;
+  &__heading {
+    font-family: 'Caveat Brush';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: calc(65 / 24);
+    text-align: center;
+    @media screen and (min-width: 1280px) {
+      font-size: 36px;
+      line-height: calc(65 / 36);
+      margin-bottom: -15px;
+    }
+  }
+  &__form-description {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(65 / 16);
+    text-align: center;
+    @media screen and (min-width: 1280px) {
+      font-size: 18px;
+      line-height: calc(65 / 18);
+    }
+  }
+  &__email {
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px rgba(171, 129, 108, 1);
+    margin-bottom: 20px;
+    outline: none;
+    background-color: transparent;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 430px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__email::placeholder {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19.5 / 16);
+    color: rgba(171, 129, 108, 0.5);
+  }
+  &__textarea {
+    width: 100%;
+    resize: none;
+    border: none;
+    border-bottom: solid 1px rgba(171, 129, 108, 1);
+    outline: none;
+    overflow-y: hidden;
+    background-color: transparent;
+    @media screen and (min-width: 1280px) {
+      width: 430px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__textarea::placeholder {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19.5 / 16);
+    color: rgba(171, 129, 108, 0.5);
+  }
+  &__send {
+    width: 145px;
+    height: 40px;
+    background-color: rgba(171, 129, 108, 1);
+    border-radius: 25px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+
+    font-family: 'Caveat Brush';
+    font-weight: 400;
+    font-size: 18px;
+
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+    transition: background-color 250ms linear, color 300ms linear;
+  }
+  &__send:hover {
+    cursor: pointer;
+    background-color: rgba(210, 149, 108, 1);
+    color: black;
+  }
+}
+
+.social-media-1 {
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    text-decoration: none;
+    width: 18px;
+    height: 19px;
+    transition: fill 250ms linear;
+    @media screen and (min-width: 1280px) {
+      width: 24px;
+      height: 19px;
+    }
+  }
+  &__link + &__link {
+    margin-left: 10px;
+  }
+  &__link:hover {
+    fill: blue;
+  }
+  &__icons {
+    @media screen and (min-width: 1280px) {
+      width: 24px;
+      height: 19px;
+    }
+  }
+}

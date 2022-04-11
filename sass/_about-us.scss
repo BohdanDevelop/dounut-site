@@ -1,0 +1,87 @@
+.about-us{
+  @media screen and (min-width:768px){
+    padding-top: 70px;
+  }
+    &__row{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        @media screen and (max-width:768px) {
+            padding-top:10%;
+        }
+        @media screen and (min-width:768px) {
+            padding-top: 10%;
+        flex-direction: row;
+        align-items:center;
+        justify-content: end;
+        }
+        
+    }
+    &__heading{
+font-family: "Caveat Brush";
+font-weight:400;
+font-size:24px;
+line-height: calc(65 / 24);
+text-align:center;
+@media screen and (min-width:1280px){
+    font-size:36px;
+    line-height: calc(65 / 36);
+    margin-bottom: 10px;
+   
+}
+    }
+    &__text{
+        width:290px;
+        font-family: "Montserrat";
+        font-weight:400;
+        font-size: 16px;
+        line-height:calc(19 / 16);
+        @media screen and (min-width:768px) {
+            width:336px;
+           
+        }
+        @media screen and (min-width:1280px){
+            font-size:18px;
+            line-height: calc(22 / 18);
+        }
+       
+       
+    }
+    &__paragraph {
+        @media screen and (min-width:768px) {
+            margin-left: 30px;
+        }
+        @media screen and (min-width:1200px) {
+            margin-left: 205px;
+        }
+    }
+    &__read-more{
+        font-family: "Caveat Brush";
+        font-weight:400;
+        font-size:18px;
+        line-height:calc(65 / 18);
+        text-decoration:none;
+       text-align: center;
+       display: block;
+        padding-bottom:20px;
+
+        color: rgba(171, 129, 108, 1);
+        @media screen and (min-width:1280px){
+            display:none;
+        }
+    }
+}
+.background{
+    
+    
+    background-image: url("../images/bg.svg");
+   background-position: 0 0; 
+   background-size: 100% auto ;
+   background-repeat: no-repeat;
+   @media screen and (min-width:768px){
+    background-image: url("../images/bg1.svg");
+   }
+   @media screen and (min-width:1280px){
+    background-image: url("../images/bg3.svg");
+   }
+}

@@ -1,0 +1,156 @@
+.registration {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 80px;
+  }
+  &__form {
+    @media screen and (min-width: 768px) {
+      margin-left: 20px;
+      margin-top: 7px;
+      margin-bottom: 7px;
+    }
+  }
+  &__flex {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+  &__heading {
+    font-family: 'Caveat Brush';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: calc(65 / 24);
+    text-align: center;
+    margin-bottom: 11px;
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      left: 50%;
+      top: -80px;
+      transform: translateX(-50%);
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 36px;
+      line-height: calc(65 / 36);
+      top: -90px;
+    }
+  }
+  &__semi-circle {
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #fff;
+    border-radius: 150px 150px 0px 0px;
+    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+    padding-bottom: 50px;
+    @media screen and (min-width: 768px) {
+      border-radius: 150px;
+      position: relative;
+      padding-top: 50px;
+    }
+  }
+  &__info {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19.5 / 16);
+    text-align: center;
+    margin-bottom: 17px;
+  }
+  &__input {
+    border: none;
+    width: 100%;
+    height: 1.7rem;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19.5 / 16);
+    outline: none;
+    border-bottom: solid 1px rgba(171, 129, 108, 1);
+
+    @media screen and (min-width: 768px) {
+      width: 234px;
+      display: block;
+    }
+  }
+  &__input::placeholder {
+    color: rgba(171, 129, 108, 0.5);
+  }
+  &__input + &__input {
+    margin-top: 15px;
+  }
+  &__button:hover {
+    cursor: pointer;
+    background-color: rgba(210, 149, 108, 1);
+    color: black;
+  }
+  &__button {
+    width: 145px;
+    height: 40px;
+    background-color: rgba(171, 129, 108, 1);
+    border-radius: 25px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+
+    font-family: 'Caveat Brush';
+    font-weight: 400;
+    font-size: 18px;
+
+    text-align: center;
+    color: #fff;
+    transition: background-color 250ms linear, color 250ms linear;
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-top: 0;
+    }
+    @media screen and (min-width: 1280px) {
+      right: 100px;
+      width: 160px;
+    }
+  }
+
+  .date-price {
+    border-bottom: solid 1px rgba(171, 129, 108, 0.5);
+    margin-bottom: 10px;
+    @media screen and (min-width: 768px) {
+      border: none;
+      border-right: solid 1px rgba(171, 129, 108, 0.5);
+      padding-right: 25px;
+      padding-left: 35px;
+      margin-bottom: 0;
+      padding-top: 15px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding-left: 100px;
+    }
+    &__date {
+      text-align: center;
+      font-family: 'Montserrat';
+      font-weight: 500;
+      font-size: 18px;
+      line-height: calc(22 / 18);
+      margin-bottom: 25px;
+      @media screen and (min-width: 768px) {
+        text-align: right;
+        margin-bottom: 35px;
+      }
+    }
+    &__price {
+      font-family: 'Montserrat';
+      font-weight: 500;
+      font-size: 18px;
+      line-height: calc(22 / 18);
+      text-align: center;
+      margin-bottom: 20px;
+      @media screen and (min-width: 768px) {
+        text-align: right;
+      }
+    }
+  }
+}

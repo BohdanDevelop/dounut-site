@@ -1,0 +1,95 @@
+.reviews {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 125px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 170px;
+  }
+  &__heading {
+    font-family: 'Caveat Brush';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: calc(65 / 24);
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 15px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 36px;
+      line-height: calc(65 / 36);
+    }
+  }
+  &__wrapper {
+    @media screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+    }
+  }
+  &__description {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19.5 / 16);
+    text-align: center;
+    @media screen and (min-width: 1280px) {
+      font-size: 18px;
+      line-height: calc(21.5 / 18);
+    }
+  }
+}
+
+.reviewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &--small {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__image-main {
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    @media screen and (max-width: 768px) {
+      width: 116px;
+      height: 116px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-top: 20px;
+    }
+  }
+  &__main-rating {
+    margin-bottom: -10px;
+  }
+  &__will {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-style: italic;
+    font-size: 14px;
+    line-height: calc(65 / 14);
+    text-align: center;
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: calc(65 / 16);
+    }
+  }
+  &__small-image {
+    border-radius: 50%;
+    margin-bottom: 5px;
+  }
+  &__other-names {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-style: italic;
+    font-size: 14px;
+    line-height: calc(65 / 14);
+    text-align: center;
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: calc(65 / 16);
+    }
+  }
+}

@@ -1,0 +1,237 @@
+.program {
+    &__order{
+        @media screen and (min-width:768px) {
+            display:flex;
+        }
+    }
+    &__text{
+        @media screen and (min-width:768px) {
+            width:580px
+        }
+    }
+  &__heading{
+      font-family: "Caveat Brush";
+      font-weight: 400;
+      font-size:24px;
+      line-height: calc(65 / 24);
+      text-align:center;
+      @media screen and (min-width:768px) {
+          font-size: 24px;
+          line-height:calc(65 / 24);
+      }
+      @media screen and (min-width:1280px) {
+          text-align: left;
+          font-size: 36px;
+          line-height:calc(65 / 36);
+          margin-bottom: 10px;
+      }
+  }  
+  &__paragraph{
+      font-family: "Montserrat";
+      font-weight:400;
+      font-size: 16px;
+      line-height:calc(19.5 / 16);
+      @media screen and (min-width:1280px){
+          font-size:18px;
+          line-height:calc(21.94 / 18);
+      }
+  }
+  &__paragraph + &__paragraph {
+      margin-top: 10px;
+      @media screen and (min-width:1280px){
+        margin-top:21px;
+    }
+  }
+  &__last-paragraph{
+      display: none;
+    font-size:18px;
+    line-height:calc(22 / 18);
+    font-family: "Montserrat";
+    font-weight:400;
+    margin-top: 21px;
+    @media screen and (min-width:1280px) {
+        display: block;
+    }
+  }
+  &__circle-order{
+      margin-right:auto;
+      margin-left:auto;
+      justify-content:center;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 400px;
+      @media screen and (min-width:768px) {
+          margin-left: 40px;
+          margin-top: 32px;
+      }
+  }
+  &__circle{
+    display:flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items:center;
+ margin-bottom: 30px;
+
+
+      background-color:rgba(254, 243, 228, 1);
+      border-radius:50%;
+      width:142px;
+      height:142px;
+      box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+      @media screen and (min-width:1280px) {
+          width: 180px;
+          height: 180px;
+          padding-bottom:20px;
+      }
+  }
+  &__circle:nth-child(even){
+      margin-left:5px;
+      margin-top:30px;
+      @media screen and (min-width:1280px) {
+          margin-left: 35px;
+      }
+     
+  }
+  &__subheading{
+      font-family: "Caveat Brush";
+      font-weight:400;
+      font-size:18px;
+      line-height:calc(22.68 / 18);
+      text-align:center;
+      color:rgba(0, 0, 0, 1);
+      margin-bottom:14px;
+      
+  }
+  &__circle-text{
+      font-family:"Montserrat";
+      font-weight: 400;
+      font-size:14px;
+      line-height:calc(17.07 / 14);
+      text-align:center;
+      margin-bottom:13px;
+  }
+  &__vector{
+      width:24px;
+      height:19px;
+      margin-bottom:8px;
+  }
+  &__zebra-donut{
+      position: relative;
+  }
+  &__zebra-donut::after{
+      content: "";
+      width:76px;
+      height:84px;
+      background-image: url("../images/phone/4.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position:absolute;
+      top: -40px;
+      @media  (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx){
+        background-image: url("../images/phone/2x/4@2.png");
+      }
+      @media screen and (min-width:1280px){
+          width:97px;
+          height:107px;
+        background-image: url("../images/pc/zebra.png");
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image: url("../images/pc/2x/zebra@2.png"); 
+        }
+      }
+
+  }
+  &__colorful-donut{
+      position: relative;
+  }
+  &__colorful-donut::after{
+    content: "";
+    width:66px;
+    height:84px;
+    background-image: url("../images/phone/color.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position:absolute;
+    top: -40px;
+    @media  (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+      background-image: url("../images/phone/2x/color@2.png");
+    }
+    @media screen and (min-width:1280px){
+        background-image: url("../images/pc/color.png");
+        width:83px;
+        height:92px;
+        @media  (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+        background-image: url("../images/pc/2x/color@2.png");
+    }
+    }
+
+}
+&__brown-donut{
+    position:relative;
+}
+&__brown-donut::after{
+    content: "";
+    width:70px;
+    height:84px;
+    background-image: url("../images/phone/brown.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position:absolute;
+    top: -40px;
+    @media  (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+      background-image: url("../images/phone/2x/brown@2.png");
+    }
+    @media screen and (min-width:1280px){
+        background-image: url("../images/pc/brown.png");
+        width:88px;
+        height:97px;
+        @media  (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+        background-image: url("../images/pc/2x/brown@2.png");
+    }
+    }
+}
+&__dark-donut{
+    position:relative;
+}
+&__dark-donut::after{
+    content: "";
+    width:65px;
+    height:84px;
+    background-image: url("../images/phone/dark.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position:absolute;
+    top: -40px;
+    @media  (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+      background-image: url("../images/phone/2x/dark@2.png");
+    }
+    @media screen and (min-width:1280px){
+        background-image: url("../images/pc/dark.png");
+        width:82px;
+        height:93px;
+        @media  (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image: url("../images/pc/2x/dark@2.png");
+        }
+    }
+}
+}
+  

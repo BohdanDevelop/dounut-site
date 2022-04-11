@@ -1,0 +1,62 @@
+.footer {
+  padding-bottom: 20px;
+  &__phone {
+    text-decoration: none;
+    color: rgba(46, 37, 32, 1);
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19.5 / 16);
+    position: relative;
+  }
+  &__phone::after {
+    display: block;
+    content: ' ';
+    width: 15px;
+    height: 15px;
+    fill: #2e2520;
+    background-image: url('../images/vector.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: -22px;
+    top: 2px;
+  }
+  &__newyork {
+    text-decoration: none;
+    color: rgba(46, 37, 32, 1);
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19.5 / 16);
+    position: relative;
+    transition: color 250ms linear;
+  }
+
+  &__newyork::before {
+    position: absolute;
+    display: block;
+    content: ' ';
+    width: 15px;
+    height: 15px;
+
+    background-image: url('../images/map.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    left: -15px;
+    fill: blue;
+  }
+  &__newyork::before:hover {
+    fill: blue;
+  }
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+  }
+}
